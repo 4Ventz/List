@@ -37,7 +37,7 @@ class CustomDrawer extends StatelessWidget {
         ),
         const NavigationDrawerDestination(
           icon: Icon(Icons.sync),
-          label: Text('Sincronizar'),
+          label: Text('Configuração'),
         ),
       ],
     );
