@@ -14,8 +14,8 @@ void main() {
       final tasks = [
         Task(Uuid.v4(), '', completed: true),
         Task(Uuid.v4(), '', completed: true),
-        Task(Uuid.v4(), ''),
-        Task(Uuid.v4(), ''),
+        Task(Uuid.v4(), '', completed: true),
+        Task(Uuid.v4(), '', completed: true),
       ];
 
       final progress = TaskCard(board: board).getProgress(tasks);

@@ -38,13 +38,20 @@ class _HomePageState extends State<HomePage> {
               ),
               itemCount: 10,
               itemBuilder: (_, index) {
-                final board = TaskBoard(Uuid.v4(), 'Nova lista de tarefas 1', tasks: [
-                  Task(Uuid.v4(), '', completed: true),
-                  Task(Uuid.v4(), '', completed: true),
-                  Task(Uuid.v4(), ''),
-                  Task(Uuid.v4(), ''),
-                ]);
-                return TaskCard(board: board);
+                final board = TaskBoard(
+                  Uuid.v4(),
+                  'Nova lista de tarefas 1',
+                  tasks: [
+                    Task(Uuid.v4(), '', completed: true),
+                    Task(Uuid.v4(), '', completed: true),
+                    Task(Uuid.v4(), '', completed: true),
+                    Task(Uuid.v4(), '', completed: true),
+                  ],
+                );
+                return TaskCard(
+                  board: board,
+                  height: 150,
+                );
               },
               separatorBuilder: (context, index) {
                 return const SizedBox(
